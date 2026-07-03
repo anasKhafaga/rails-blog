@@ -7,6 +7,9 @@ app = 'rails-blog-nem-ug'
 primary_region = 'iad'
 console_command = '/rails/bin/rails console'
 
+[env]
+  PORT = 8080
+
 [build]
 
 [[mounts]]
