@@ -1,23 +1,23 @@
-# fly.toml app configuration file generated for rails-blog-nem-ug on 2026-07-03T11:22:47Z
+# fly.toml app configuration file generated for rails-blog-ramalg on 2026-07-03T13:06:13Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'rails-blog-nem-ug'
-primary_region = 'iad'
+app = 'rails-blog-ramalg'
+primary_region = 'cdg'
 console_command = '/rails/bin/rails console'
 
-[env]
-  PORT = 8080
-
 [build]
+
+[env]
+  PORT = '8080'
 
 [[mounts]]
   source = 'data'
   destination = '/data'
 
 [http_service]
-  internal_port = 8080
+  internal_port = 3000
   force_https = true
   auto_stop_machines = 'stop'
   auto_start_machines = true
